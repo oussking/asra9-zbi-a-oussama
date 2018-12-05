@@ -1,0 +1,573 @@
+/*   
+ * Template Name: Man ana
+ * Version: 1.0
+ * Author: qawba
+ * Website: http://qawba.com/
+*/
+/* ======= Base ======= */
+* { margin:0; padding:0; }
+body {
+    color: #555;
+    font-family: "JF Flat Regular";
+    font-size: 16px;
+    font-weight: 300;
+    height:100%;
+    z-index: 1;
+}
+
+#homepage {
+    background: url("../img/patterns/pattern1.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    position: relative;
+    padding: 0px;
+    height: 100%;
+    min-height: 100%
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+    font-family: "JF Flat Regular";
+    font-weight: 100;
+}
+p {
+    line-height: 28px;
+    margin-bottom: 0px;
+    padding:0px 20px 15px 20px
+}
+.centered {
+    text-align: center;
+}
+a {
+    color: #ff6b45;
+    transition: color 0.1s ease-in 0s, background 0.1s ease-in 0s;
+    word-wrap: break-word;
+}
+a:hover, a:focus {
+    color: #7b7b7b;
+    outline: 0 none;
+    text-decoration: none;
+    -o-transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+}
+a:before, a:after {
+    transition: color 0.1s ease-in 0s, background 0.1s ease-in 0s;
+}
+
+hr {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #eee -moz-use-text-color -moz-use-text-color;
+    border-image: none;
+    border-right: 0 none;
+    border-style: solid none none;
+    border-width: 1px 0 0;
+    display: block;
+    height: 1px;
+    margin: 1em 0;
+    padding: 0;
+}
+.w-bg {
+    background-color: #ffffff;
+    border: 0px solid #dddddd;
+    box-shadow: 0px 0px 0px 10px rgba(0, 0, 0, 0.2);
+    opacity: 0.9;
+
+}
+.w-bg:hover {
+    opacity: 1;
+
+}
+.r {float: right;display: inline;width: 35%}
+.l {float: left;display: inline;width: 65%}
+
+.img-responsive {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+img {
+    vertical-align: middle;
+}
+.col-md-4 {
+    padding-left: 0;
+    padding-right: 0;
+}
+.col-md-8 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.nav-tabs {
+    border: 0px solid #dddddd;
+    padding: 0;
+    margin: 0
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    background-color: #ff6b45;
+    border: 0px solid #ff6b45;
+    color: #fff;
+    cursor: default;
+    width: 100%;
+    margin: 0
+}
+.nav-tabs > li > a {
+    background-color: #f2f2f2;
+    border: 0px solid #eee;
+    border-radius: 0;
+    line-height: 34px;
+    padding: 10px 25px;
+    margin: 0px;
+    width: 100%;
+}
+
+.nav-stacked > li + li {
+    margin-left: 0;
+    margin-top: 1px;
+    margin-bottom: 1px;
+
+}
+
+.tab-content {
+    opacity: 0.8;
+    padding: 0px;
+}
+
+.tab-content .img-right{
+    padding-right: 25px;
+    padding-top: 0px;
+}
+
+.tab-content .img-right-top{
+    padding-right: 25px;
+    padding-top: 20px;
+}
+.tab-content .img-left{
+    padding-left: 25px;
+    padding-top: 0px;
+}
+
+.tab-content .img-left-top{
+    padding-left: 25px;
+    padding-top: 20px;
+}
+.tab-content h3 {
+    font-weight: 100;
+    letter-spacing: 1px;
+    padding: 10px 25px 
+}
+
+.tab-content h4 {
+    font-weight: 100;
+    letter-spacing: 1px;
+    padding: 10px 25px  0px 25px
+}
+
+.tab-content h5 {
+    color: #bdc3c7;
+    font-weight: 100;
+    letter-spacing: 1px;
+    padding: 0px 25px 10px 25px
+}
+.red i {
+    color: #e74c3c;
+    font-size: 12px;
+}
+i {
+    vertical-align: middle;
+}
+.sm {
+    font-size: 14px;
+}
+a h6 {
+    color: #ff6b45;
+}
+a h6:hover {
+    color: #7b7b7b;
+}
+
+.social-icons{
+    float: right;
+    margin:0px auto 0px auto;
+    height: 40px
+    }
+
+.social-icons a i{font-size: 18px;
+    padding: 0px 25px 0px 0px;
+    margin:0px 0px;
+    color: #999
+    }
+
+.social-icons a:hover i{
+    color: #e74c3c
+    }
+
+@media (max-width: 767px) {
+    #homepage{padding-top: 20px;padding-bottom: 20px}
+.r {float: right;display: inline;width: 100%}
+.l {float: left;display: inline;width: 100%}
+
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    #homepage{padding-top: 60px;padding-bottom: 60px}
+.r {float: right;display: inline;width: 100%}
+.l {float: left;display: inline;width: 100%}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    #homepage{padding-top: 80px;padding-bottom: 80px}
+.r {float: right;display: inline;width: 40%}
+.l {float: left;display: inline;width: 60%}
+}
+@charset "utf-8";
+/* Selection color and background color */
+::selection{background: #5e5e5e;color: #fff;}
+::-moz-selection{background: #5e5e5e;color: #fff;}
+::-webkit-selection{background: #5e5e5e;color: #fff;}
+/* End Selection */
+/* CSS Document */
+@font-face {
+	font-family: NeoSansArabic;
+	src: url('../fonts/NeoSansArabic.eot');
+	src: url('../fonts/NeoSansArabic.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/NeoSansArabic.woff') format('woff'),
+	url('../fonts/NeoSansArabic.ttf') format('truetype'),
+	url('../fonts/NeoSansArabic.svg#NeoSansArabic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: DroidKufi-Regular;
+	src: url('../fonts/DroidKufi-Regular.eot');
+	src: url('../fonts/DroidKufi-Regular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/DroidKufi-Regular.woff') format('woff'),
+	url('../fonts/DroidKufi-Regular.ttf') format('truetype'),
+	url('../fonts/DroidKufi-Regular.svg#diavlo_medium_ii_37_1-webfont') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: ge-ss-med;
+	src: url('../fonts/ge-ss-med.eot');
+	src: url('../fonts/ge-ss-med.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/ge-ss-med.woff') format('woff'),
+	url('../fonts/ge-ss-med.ttf') format('truetype'),
+	url('../fonts/ge-ss-med.svg#ge-ss-med') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body{
+	background-image:url(../images/bg.PNG);
+	background-repeat:repeat;
+	margin:auto;
+}
+.header1{
+	background-image:url(../images/bg-h.png);
+	background-repeat:repeat-x;
+	height:395px;
+}
+.navigation{
+	width:868px;
+	height:84px;
+	margin:auto;
+}
+img.logo {
+    margin-left: 5px;
+    margin-top: 18px;
+}
+.slid{
+	width:800px;
+	height:311px;
+	margin:auto;
+}
+.man{
+	background-image:url(../images/man.png);
+	background-repeat:no-repeat;
+	height:311px;
+	width:850px;
+	float:left;
+	position:relative;
+
+}
+a.hi1{
+    color: #217B83;
+    font-family: DroidKufi-Regular,tahoma;
+    font-size: 24px;
+    left: 388px;
+	font-weight:bold;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #3DAEBA;
+    top: 93px;
+			}
+a.hi2 {
+    color: #FFFFFF;
+    font-family: ge-ss-med,tahoma;
+    font-size: 19px;
+    left: 443px;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #999999;
+    top: 142px;}
+.home{
+	width:884px;
+	height:auto;
+	margin:auto;
+}
+.c1{
+    float: left;
+    margin:14px auto auto 99px ;
+    text-align: center;}
+.pc1{
+	    background: url(../images/bg-c.png);
+    border-radius: 120px 120px 120px 120px;
+    height: 105px;
+    transition: all 0.3s ease 0s;
+    width: 107px;
+	margin:auto;
+}
+.pc{
+	margin:17px;
+}
+h2{
+	font-family: DroidKufi-Regular,tahoma;
+	font-size:17px;
+	font-weight:bold;
+	color:#3aa2ad;
+	    margin-top: 8px;
+}
+a.tex{
+		font-family:NeoSansArabic,tahoma;
+	font-size:14px;	color:#434343;
+    position: relative;
+    top: 10px;
+	
+}
+.wq{
+	background:url(../images/bg-f.PNG);
+	background-repeat:repeat;
+	height:144px;
+	width:784px;
+	margin:auto;
+	position:relative;
+		border-radius: 7px;
+}
+a.tex1{
+	font-family:NeoSansArabic,tahoma;
+	font-size:17px;
+	text-align:center;
+	margin:auto;
+	position:absolute;
+	left:119px;
+	color:#ffffff;
+}
+.clr{
+	clear:both;
+}
+.footer{
+	background-image:url(../images/bg-f.PNG);
+	height:45px;
+	background-repeat:repeat-x;
+
+}
+h2.a12{
+    color: #3AA2AD;
+    font-family: DroidKufi-Regular,tahoma;
+    font-size: 17px;
+    font-weight: bold;
+    left: 14px;
+    position: relative;
+    top: 16px;
+	direction:rtl;}
+
+.zrar{
+	float:left;
+	position:relative;
+}
+a.zraz{
+    background: none repeat scroll 0 0 #3BA6B1;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.2) inset;
+    color: #333333;
+    float: none;
+    font-family: NeoSansArabic,tahoma;
+    font-size: 18px;
+    left: 174px;
+    padding: 5px 70px;
+    position: relative;
+    text-decoration: none;
+    top: 62px;
+    transition: background 400ms ease-in-out 0s;
+}
+a.zra1{
+    background: none repeat scroll 0 0 #3BA6B1;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.2) inset;
+    color: #333333;
+    float: none;
+    font-family: NeoSansArabic,tahoma;
+    font-size: 18px;
+    left: 174px;
+    padding: 5px 52px;
+    position: relative;
+    text-decoration: none;
+    top: 62px;
+    transition: background 400ms ease-in-out 0s;
+}
+a.zraz:hover{
+    background: none repeat scroll 0 0#676767;
+	color:#CCC;
+}
+a.zra1:hover{
+    background: none repeat scroll 0 0#676767;
+		color:#CCC;
+}
+
+/* Dropdowns Menu */
+@font-face {
+	font-family: NeoSansArabic;
+	src: url('../fonts/NeoSansArabic.eot');
+	src: url('../fonts/NeoSansArabic.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/NeoSansArabic.woff') format('woff'),
+	url('../fonts/NeoSansArabic.ttf') format('truetype'),
+	url('../fonts/NeoSansArabic.svg#NeoSansArabic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+#pop {
+	list-style: none;
+	height:26px;
+	padding: 0;
+	text-align:right;
+	width:500px;
+	float:right;
+   margin-top: 32px;
+    transition: background 400ms ease-in-out 0s;
+   	font-family: NeoSansArabic ,Tahoma, sans-serif;
+
+}
+#pop ul {
+	position: absolute;
+	list-style: none;
+	z-index: 1000;
+	display: none;
+	width: 190px; /* Ø¹Ø±Ø¶ Ø§Ù„Ù‚Ø§Ø¦Ù…Ø© Ø§Ù„ÙØ±Ø¹ÙŠØ© */
+	padding: 0;
+	margin: 0;
+	top: 100%;
+	right: 0;
+}
+#pop ul ul, #pop ul ul ul {
+	right: 100%;
+	top: 0;
+}
+#pop li {
+	float: right;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+#pop li.iehover { 
+	z-index: 1000;
+} 
+#pop ul li {
+	display: block;
+	width: 100%;
+}
+
+
+
+
+
+
+/* ---- ROOT > -------------------------- */
+#pop a {
+	padding: 4px 10px;
+	text-decoration: none;
+	outline-style:none;
+	display: block;
+	border-radius: 4px 4px 4px 4px;
+	float: left;
+	
+	font-size:15px;
+	color: #ffffff;
+	transition: background 300ms ease-in-out 0s;
+	height: auto !important;
+	height: 1%;
+}
+/* ---- ROOT:Hover > -------------------- */
+#pop a:hover, #pop li:hover a, #pop li.iehover a {
+    background: none repeat scroll 0 0 #3BA6B1;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.2) inset;
+	padding: 3px 10px;
+	margin-top:1px;
+	    transition: background 300ms ease-in-out 0s;
+    color: #333333;
+	 text-shadow: 0 1px 0 #3DAEBA;
+	float: none;
+	    font-family: NeoSansArabic,tahoma;
+}
+/* ---- ROOT.ArrowDown > ---------------- */
+#pop a.popup_down {
+	background-position: 5px 9px;
+	background-repeat: no-repeat;
+	padding-left: 7px;
+}
+
+
+/* ---- ROOT > LEVEL_01 ----------------- */
+#pop li:hover li a, #pop li.iehover li a {
+    background: none repeat scroll 0 0 #3BA6B1;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.2) inset;
+	padding: 3px 10px;
+	margin-top:1px;
+	    transition: background 300ms ease-in-out 0s;
+    color: #333333;
+	 text-shadow: 0 1px 0 #3DAEBA;
+	float: none;
+	    font-family: NeoSansArabic,tahoma;
+}
+	
+/* ---- ROOT > LEVEL_01:Hover ----------- */
+#pop li:hover li a:hover, #pop li:hover li:hover a, #pop li.iehover li.iehover, #pop li.iehover li.iehover a {
+	    background: none repeat scroll 0 0 #676767;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.2) inset;
+	padding: 3px 10px;
+	margin-top:1px;
+	    transition: background 300ms ease-in-out 0s;
+    color: #cccccc;
+	 text-shadow: 0 1px 0 #3DAEBA;
+	float: none;
+	    font-family: NeoSansArabic,tahoma;
+
+}
+/* ---- ROOT > LEVEL_01.ArrowLeft ------- */
+
+
+/* ---- ROOT >> LEVEL_02 ---------------- */
+#pop li:hover li:hover li a, #pop li.iehover li.iehover li a {
+	border-bottom: 1px solid #6E3074;
+	background-color: #79357F;
+	color: #FFF;
+}
+/* ---- ROOT >> LEVEL_02:Hover ---------- */
+#pop li:hover li:hover li a:hover, #pop li:hover li:hover li:hover a, #pop li.iehover li.iehover li a:hover, #pop li.iehover li.iehover li.iehover a {
+	background-color: #6C2A72;
+	color: #FFF;
+}
+
+
+/* ---- ROOT >>> LEVEL_03 --------------- */
+#pop li:hover li:hover li:hover li a, #pop li.iehover li.iehover li.iehover li a {
+	bord0í
+V8 Äøb×µ55–ðLqFõŠYË[+ìK½öç¾Ö Y¯ôhÍš"£HÛ‚´†A¼ÇÊºÃ·!UDfMãÌcŸk#€¼qT° ­?†Ï0ÛpiÌ-þ{Ð«K½‘Ñ±š!5ÊgZ «qŸZ¢}«Ñ2ñGÁæþå³^\Ó#T¦Q‰ï!úˆ»ˆ;¹ ¹;¥Xwƒ*4 &Šï,tà•ÑŒº°­xæ^ìãá% ªØ°Î†x€“y÷=@	b ŸDà€>Ã€3mdÍ ‚+¾ k4àzÊW ˆ˜$,>F¼ï}ûò³‚9#tsÖ7,ýô®#øð‘œ©¼Ù«±jÔÖŽ N×WDví·˜ñ*J>†ŽùfÔ'ùysÿIZè9¦Ò255!|6,ÆÙÚDZ x\Ø€!M¿ÿûþnËeN \ÛRKZ´Þ¥<–ð	š-r…§ÃÙ'yW®Ã ÈÌ¬Õ`¸Íï¢‘^û(Æ‰:Û.Ëá?,«jA|"5ð• …çT7Âé³AàÀ€ªEm¬]BÖ¾Ò`g˜û¦Óbœ]åœrnëV¢På¤¥Pžé	ÄP¨I€%Ñp /§Ô£+€O¬€ -5”‚ë{Kª½	ªV^‰›¹A”ï?œ¢¨åq®4¨ôùôp
